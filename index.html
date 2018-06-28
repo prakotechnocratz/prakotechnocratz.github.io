@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs ==================================================
+================================================== -->
+
+<meta charset="utf-8">
+<title>Prako Technocratz</title>
+<meta name="description" content="Place to put your description text">
+<meta name="author" content="">
+
+<!-- Mobile Specific Metas ==================================================
+================================================== -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="shortcut icon" href="images/logoT.png">
+<link rel="apple-touch-icon" href="images/logoT.png">
+<script>
+    if (window.screen.height==568) { // iPhone 4"
+    document.querySelector("meta[name=viewport]").content="width=320.1";
+    }
+    </script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js/portfolio/photoswipe.css">
+<link rel="stylesheet" href="themes/F.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/portfolio/klass.min.js"></script>
+<script type="text/javascript" src="js/portfolio/code.photoswipe.jquery-3.0.4.min.js"></script>
+<script src="js/slider/jquery.flexslider-min.js"></script>
+<script src="js/custom.js"></script>
+</head>
+<body style="background-color: #ffffff;">
+<div data-role="page" data-theme="f">
+
+  <!-- header -->
+  <div data-role="header" data-theme="f">
+      <h1>Prako technocratz</h1>
+    </div>
+  <!--/header -->
+
+  <!-- slider -->
+  <div class="flex-container" data-theme="f">
+    <div class="flexslider">
+      <ul class="slides">
+        <li> <img src="images/electronic/e1.jpg" alt="slide1"></li>
+        <li> <img src="images/comps-it/ht1.jpg" alt="slide2"> </li>
+        <li> <img src="images/civil/c1.jpg" alt="slide3"> </li>
+        <li> <img src="images/comps-it/ht3.jpg" alt="slide4"> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /slider -->
+
+  <!-- social -->
+  <div data-theme="f" style="border-color: #000000;"><center>
+    <a href="https://www.facebook.com/PrakoRobotics/?ref=br_rs">
+      <img src="images/social/facebook.png" alt="facebook">
+    </a>
+    <a href="https://twitter.com/prakotech?lang=en">
+      <img src="images/social/twitter.png" alt="twitter">
+    </a>
+    <a href="https://www.instagram.com/prako_technocratz/">
+      <img src="images/social/instagram.png" alt="insta">
+    </a>
+    <a href="https://www.youtube.com/channel/UCCS3Ga0m58DgCn30X_yieBg">
+      <img src="images/social/YouTube.png" alt="YouTube">
+    </a></center>
+  </div>
+  <!-- /social -->
+
+  <!-- main content -->
+  <div data-role="content" style="padding:10px 20px; margin: 10px 20px; ">
+    <hr class="blankseparator"/>
+    <div data-role="controlgroup" >
+      <ul data-role="listview" data-inset="true" id="listview">
+        <li><a href="about.html" data-prefetch >About</a></li>
+        <li><a href="portfolio.html" data-prefetch data-transition="none">Workshops</a></li>
+        <li><a href="blog.html" data-prefetch data-transition="none">Services</a></li>
+        <li><a href="gallery.php" data-prefetch data-transition="none">Gallery</a></li>
+        <li><a href="contact.html" data-prefetch data-transition="none">Contact</a></li>
+        <li><a href="http://www.prakotechnocratz.com/" data-prefetch data-transition="none">Our website</a></li>
+        <li><a href="#popupLogin" data-prefetch data-transition="none">Login</a>
+
+
+        </li>
+      </ul>
+    </div>
+    <hr class="blankseparator"/>
+
+    <!-- list begins -->
+  
+    <!-- list ends -->
+    <hr class="blankseparator"/>
+    <div class="quote1" data-theme="f">
+      <h3 class="home-title">&quot; We believe in innovation and that the way you get innovation is you fund research and you learn the basic facts. &quot;</h3>
+    </div>
+    <!-- end quote -->
+
+  </div>
+  <!-- /main content -->
+
+ <!-- footer -->
+  <div data-role="footer" class="footer" data-theme="f">
+        <div id="copyright"><center>
+      <p class="copyright">&copy; Copyright 2018. &quot;Prako technocratz &quot; All rights reserved.</p></center>
+    </div>
+  </div>
+  <!-- /footer -->
+
+</div>
+<!--page-->
+
+<div data-role="popup" id="popupLogin" data-theme="f">
+  
+    <form action="connection1.php" method="POST">
+        <div style="padding:10px 20px; margin: 10px 20px;" data-theme="f">
+            <h3>Sign in</h3>
+          
+            <input name="uname1" type="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" placeholder="Email" data-theme="f">
+           
+            <input name="psw" type="password"  required data-theme="f" placeholder="password">
+            <button type="submit" value="Login" class="button" onClick="return display1()">Sign in</button><br>
+<a href="#register"><u>Don't have an account...?</u></a>
+        </div>
+
+    </form>
+</div>
+
+<div data-role="popup" class="panel__box" id="register" data-theme="f" >
+        <form action="registration.php" name="myForm" method="POST"
+      >
+        <div style="padding:10px 20px; margin: 10px 20px; " data-theme="f">
+            <h3>Sign in</h3>
+    
+        <input name="eml"  type="email" placeholder="Email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"/>
+      
+        <br>
+        <input name="psd" type="password" placeholder="Password" />
+     <br>
+        <input name="cpsd" type="password" placeholder="confirm password" />
+        <br>
+      <input type="submit" value="Submit" class="button" onClick="return display()"/>
+     
+    </div>
+    </form>
+    
+    </div>
+
+<script type="text/javascript">
+  function display(){
+  
+    var password=document.getElementById("password").value;
+    var confirm_password=document.getElementById("confirm_password").value;
+    var p=document.index.psd.value;
+  if((p.length)<8)
+    { alert ("password is too small");}
+      if(password!=confirm_password){
+        alert("password dosen't match");
+        return false;
+      }
+      
+      return true;
+      
+    
+  }
+
+function display1()
+{
+
+var password=document.getElementById("password").value;
+
+    var p=document.index.psw.value;
+  if((p.length)<8)
+    { alert ("password is too small");}
+      if(password!=confirm_password){
+        alert("password dosen't match");
+        return false;
+      }
+      
+      return true;
+      
+
+}
+  </script>
+</body>
+</html>
